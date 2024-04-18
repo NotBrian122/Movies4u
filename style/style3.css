@@ -65,7 +65,7 @@ header nav:hover > a:not(:hover){
 
 .image1{
     z-index: 2;
-    background-image: url(Images/background_image.png);
+    background-image: url(/Images/background_image.png);
     padding: 20px;
     margin-left: 13%;
     margin-right: 3%;
