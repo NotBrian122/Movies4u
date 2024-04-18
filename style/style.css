@@ -1,0 +1,173 @@
+/* main header of page1*/
+*{
+    margin: 0;
+    font-family: 'Courier New';
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 5px;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+}
+
+.vid1{
+    position: absolute;
+    margin-top: 45dvh;
+    margin-left: 50%;
+    transform: translate(-50%,-65%);
+    filter:grayscale(100%);
+    
+}
+.movieBackground{
+   height: 942px;
+   margin-bottom: 220px;
+}
+h1{
+    font-size: 40px;
+}
+
+header nav {
+    display: flex;
+    gap:3px;
+    width: 80%;
+    padding-right: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.45s;
+    color: gray;
+    width: 100%;
+}
+
+header nav a.active{
+    background: red;
+}
+
+header nav a:hover{
+    background: green;
+    cursor:hand;
+}
+
+header nav:hover > a:not(:hover){
+    background: none;
+}
+/*Main body of page 1*/
+.Home{
+    display: flex;
+    height: 90dvh;
+    background:black;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:0;
+}
+
+.Home img {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.Home .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    color: black,0.5;
+    font-size: 80px;
+    text-shadow: 0px 0px 5px rgba(0,0,0,.25);
+    filter: grayscale(100%);
+    filter:blur(10%);
+    transition-duration:.3s;
+    text-decoration: none;
+}
+.Home .title:hover{
+    cursor: hand;
+    filter:grayscale(0%);
+    filter:blur(0%);
+    filter:opacity(1);
+    text-size-adjust: 10px;
+    transition: ease-in-out 1s;
+}
+
+.Home .curt1{
+    height: 100%;
+    float: left;
+    transition-duration: .3s;
+}
+
+.Home .curt2{
+    height: 100%;
+    float: right;
+    transition-duration: .3s;
+}
+
+.seat1{
+    margin-bottom: 100px;
+    transition-duration: .3s;
+}
+
+.Home .buk1{
+    z-index: 100000;
+    position: absolute;
+    filter: saturate(80%);
+}
+.Home .bukbehind{
+    z-index: 600;
+    position: absolute;
+    margin-bottom: 20px;
+    filter: saturate(80%);
+    filter:brightness(.5)
+}
+.pop1{
+    margin-bottom: -40px;
+    z-index: 601;
+}
+.pop2{
+    z-index: 603;
+}
+
+/*Bottem of page1*/
+
+.buk2{
+    margin-top:0;
+    margin-bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index:997;
+    background-repeat: repeat-y;
+    filter: saturate(80%);
+    background-color: black;
+}
+
+.about p h1{
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    margin:0;
+    padding:0;
+}
+.paragraph{
+    text-align: center;
+    background-color: black;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+footer{
+    background-color: black;
+    padding: 60px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    z-index:1;
+}

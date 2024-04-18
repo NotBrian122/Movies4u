@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    font-family: 'Courier New';
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 5px;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+}
+
+.vid1{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 50%;
+    transform: translate(-50%,-65%);
+    filter:grayscale(100%);
+}
+.movieBackground{
+   height: 942px;
+   margin-top: 0px;
+   margin-bottom: 220px;
+   width: 50%;
+}
+h1{
+    font-size: 40px;
+}
+
+header nav {
+    display: flex;
+    gap:3px;
+    width: 80%;
+    padding-right: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.45s;
+    color: gray;
+    width: 100%;
+}
+
+header nav a.active{
+    background: red;
+}
+
+header nav a:hover{
+    background: green;
+    cursor:hand;
+}
+
+header nav:hover > a:not(:hover){
+    background: none;
+}
+#mainBody{
+    background-color: gray;
+    background-size: 100dvh;
+}
+.movie_rant{
+    background-color: gray;
+    color: black;
+    text-align: center;
+}
+.movie_rant p{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-transform: 25px;
+}
+.table a{
+    background-color: rgb(58, 58, 58);
+    width: 88%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 35px;
+    margin-left:25px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.table {
+    background-color: rgb(58, 58, 58);
+    width: 88%;
+    border: 2px solid gray;
+    font-size:x-large ;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+.pricing_table{
+    background-color: gray;
+    padding-left: 40%;
+    height: 20dvh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+thead{
+    background-color: gray;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+th,td{
+    border: 1px solid rgb(0, 0, 0);
+    text-align: left;
+    padding: 8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.thread th{
+    width: 25%;
+}
+.pricing_table:hover{
+    color: rgb(51, 51, 51);
+    transition: .4s;
+    text-transform: .1px;
+}
+.mapTitle{
+    text-align: center;
+}
+.mapTitle p{
+    text-transform: 20px;
+}
+.maps{
+    border-radius: 20px;
+    border: 2px solid black;
+}
+footer{
+    background-color: black;
+    padding: 60px;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    z-index:1;
+}
+
+
+
